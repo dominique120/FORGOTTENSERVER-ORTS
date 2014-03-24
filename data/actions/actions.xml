@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-        <!-- outlaw camp -->
-	<action uniqueid="3313" script="The-outlaw-quest/3303.lua" />
-	<action uniqueid="3314" script="The-outlaw-quest/3304.lua" />
-	<action uniqueid="3311" script="The-outlaw-quest/3301.lua" />
-	<action uniqueid="3312" script="The-outlaw-quest/3302.lua" />
-	<action uniqueid="3403" script="The-outlaw-quest/bright_sword.lua" />
-	<action uniqueid="3400" script="The-outlaw-quest/oven.lua" />
-	<action uniqueid="3401" script="The-outlaw-quest/powerswitch.lua" />
-	<action uniqueid="3402" script="The-outlaw-quest/powerburn.lua" />
 
 	<!-- Kazordoon -->
 	<action actionid="8034" script="kazordoon/kazordoonOreWagons.lua"/>
@@ -474,9 +465,9 @@
 	<action uniqueid="9226" script="sam old backpack/samOldBackpackQuestReward.lua"/>
 	
 	<!-- The Travelling Trader Quest -->
-	<action itemid="5928" script="the travelling trader quest/rashidQuestFish.lua"/>
-	<action uniqueid="3019" script="the travelling trader quest/rashidQuestPackage.lua"/>
-	<action uniqueid="3020" script="the travelling trader quest/rashidQuestPackageDoor.lua"/>
+	<action uniqueid="3019" script="the travelling trader quest/rashidQuestPackageDoor.lua"/>
+	<action uniqueid="3020" script="the travelling trader quest/rashidQuestPackage.lua"/>
+	
 	
 	<!-- Their Masters Voice Quest -->
 	<action itemid="13601" script="their master's voice quest/slimeGobbler.lua"/>
@@ -600,95 +591,22 @@
 	<action itemid="19692" function="decreaseItemId"/>
 
 	<!-- Food -->
-	<action itemid="16014" script="other/food.lua"/>
-	<action itemid="12416" script="other/food.lua"/>
-	<action itemid="2676" script="other/food.lua"/>
-	<action itemid="9996" script="other/food.lua"/>
-	<action itemid="6574" script="other/food.lua"/>
-	<action itemid="8845" script="other/food.lua"/>
-	<action itemid="2677" script="other/food.lua"/>
-	<action itemid="2689" script="other/food.lua"/>
-	<action itemid="12417" script="other/food.lua"/>
-	<action itemid="2691" script="other/food.lua"/>
-	<action itemid="2789" script="other/food.lua"/>
-	<action itemid="9114" script="other/food.lua"/>
-	<action itemid="6278" script="other/food.lua"/>
-	<action itemid="6569" script="other/food.lua"/>
-	<action itemid="2688" script="other/food.lua"/>
-	<action itemid="2684" script="other/food.lua"/>
-	<action itemid="12418" script="other/food.lua"/>
-	<action itemid="2696" script="other/food.lua"/>
-	<action itemid="12641" script="other/food.lua"/>
-	<action itemid="2679" script="other/food.lua"/>
-	<action itemid="8847" script="other/food.lua"/>
-	<action itemid="2678" script="other/food.lua"/>
-	<action fromid="6541" toid="6545" script="other/food.lua"/>
-	<action itemid="2687" script="other/food.lua"/>
-	<action itemid="2686" script="other/food.lua"/>
-	<action itemid="6394" script="other/food.lua"/>
-	<action itemid="11429" script="other/food.lua"/>
-	<action itemid="8842" script="other/food.lua"/>
-	<action itemid="2792" script="other/food.lua"/>
-	<action itemid="6279" script="other/food.lua"/>
-	<action itemid="15488" script="other/food.lua"/>
-	<action itemid="2672" script="other/food.lua"/>
-	<action itemid="12638" script="other/food.lua"/>
-	<action itemid="12637" script="other/food.lua"/>
-	<action itemid="2695" script="other/food.lua"/>
-	<action itemid="2795" script="other/food.lua"/>
-	<action itemid="2667" script="other/food.lua"/>
-	<action itemid="6501" script="other/food.lua"/>
-	<action itemid="2681" script="other/food.lua"/>
-	<action itemid="2796" script="other/food.lua"/>
-	<action itemid="7159" script="other/food.lua"/>
-	<action itemid="2671" script="other/food.lua"/>
-	<action itemid="13297" script="other/food.lua"/>
-	<action fromid="7372" toid="7377" script="other/food.lua"/>
-	<action itemid="19737" script="other/food.lua"/>
-	<action itemid="8844" script="other/food.lua"/>
-	<action itemid="15487" script="other/food.lua"/>
-	<action itemid="8841" script="other/food.lua"/>
+	<action fromid="2362" toid="2363" script="other/food.lua"/>
+	<action fromid="2666" toid="2691" script="other/food.lua"/>
+	<action fromid="2695" toid="2696" script="other/food.lua"/>
+	<action fromid="2787" toid="2796" script="other/food.lua"/>
 	<action itemid="5097" script="other/food.lua"/>
-	<action itemid="7963" script="other/food.lua"/>
-	<action itemid="2666" script="other/food.lua"/>
-	<action itemid="2682" script="other/food.lua"/>
-	<action itemid="18397" script="other/food.lua"/>
-	<action itemid="2669" script="other/food.lua"/>
-	<action itemid="8843" script="other/food.lua"/>
-	<action itemid="2675" script="other/food.lua"/>
-	<action itemid="2790" script="other/food.lua"/>
-	<action itemid="7910" script="other/food.lua"/>
-	<action itemid="2673" script="other/food.lua"/>
-	<action itemid="12639" script="other/food.lua"/>
-	<action itemid="12415" script="other/food.lua"/>
-	<action itemid="8839" script="other/food.lua"/>
-	<action itemid="8838" script="other/food.lua"/>
-	<action itemid="2683" script="other/food.lua"/>
-	<action itemid="7158" script="other/food.lua"/>
-	<action itemid="8840" script="other/food.lua"/>
-	<action itemid="20101" script="other/food.lua"/>
-	<action itemid="2674" script="other/food.lua"/>
-	<action itemid="2788" script="other/food.lua"/>
-	<action itemid="11246" script="other/food.lua"/>
-	<action itemid="2690" script="other/food.lua"/>
-	<action itemid="2668" script="other/food.lua"/>
-	<action itemid="15405" script="other/food.lua"/>
-	<action itemid="8112" script="other/food.lua"/>
-	<action itemid="2670" script="other/food.lua"/>
-	<action itemid="20100" script="other/food.lua"/>
-	<action itemid="2794" script="other/food.lua"/>
-	<action itemid="2793" script="other/food.lua"/>
-	<action itemid="2680" script="other/food.lua"/>
-	<action itemid="11370" script="other/food.lua"/>
-	<action itemid="2362" script="other/food.lua"/>
-	<action itemid="2685" script="other/food.lua"/>
-	<action itemid="5678" script="other/food.lua"/>
 	<action itemid="6125" script="other/food.lua"/>
-	<action itemid="6393" script="other/food.lua"/>
-	<action itemid="7909" script="other/food.lua"/>
-	<action itemid="2787" script="other/food.lua"/>
-	<action itemid="2791" script="other/food.lua"/>
-	<action itemid="9005" script="other/food.lua"/>
+	<action itemid="6278" script="other/food.lua"/>
+	<action itemid="6279" script="other/food.lua"/>
+	<action itemid="6394" script="other/food.lua"/>
+	<action itemid="6501" script="other/food.lua"/>
+	<action fromid="6541" toid="6545" script="other/food.lua"/>
+	<action itemid="6569" script="other/food.lua"/>
+	<action itemid="6574" script="other/food.lua"/>
+	<action itemid="7158" script="other/food.lua"/>
+	<action itemid="7159" script="other/food.lua"/>
+	<action fromid="7372" toid="7377" script="other/food.lua"/>
 
 	<!-- Spellbooks -->
 	<action itemid="2175" script="other/spellbook.lua"/>
@@ -697,6 +615,7 @@
 	<action itemid="8918" script="other/spellbook.lua"/>
 
 	<!-- Other -->
+	<action itemid="5928" script="other/catchFish.lua"/>
 	<action itemid="13670" script="other/belongings.lua"/>
 	<action itemid="16101" script="other/premiumscroll.lua"/>
 	<action itemid="6578" script="other/partyhat.lua"/>
@@ -743,7 +662,7 @@
 	<action fromid="2047" toid="2048" script="other/decayto.lua"/>
 	<action fromid="2050" toid="2055" script="other/decayto.lua"/>
 	<action itemid="430" script="other/teleport.lua"/>
-	<action itemid="1369" script="other/teleportdrawwell.lua"/>
+	<action itemid="1369" script="other/teleport.lua"/>
 	<action itemid="1386" script="other/teleport.lua"/>
 	<action itemid="3678" script="other/teleport.lua"/>
 	<action itemid="5543" script="other/teleport.lua"/>
@@ -771,7 +690,6 @@
 	<action itemid="7439" script="other/strengthening_potions.lua" />
 	<action itemid="7440" script="other/strengthening_potions.lua" />
 	<action itemid="7443" script="other/strengthening_potions.lua" />	
-	<action itemid="6558" script="other/concentrated_demonic_blood.lua" />
 	<action itemid="2692" script="other/createbread.lua"/>
 	<action itemid="2694" script="other/createbread.lua"/>
 	<action fromid="6436" toid="6447" script="other/windows.lua"/>

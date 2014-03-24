@@ -19,39 +19,36 @@ local destination = {
 	[3219] = {pos = {x = 33217, y = 31814, z = 8}, storage = 1, crystal = true}
 }
 
-local crystalID = 18457 -- Teleport crystal id
 function onStepIn(cid, item, position, lastPosition)
-	local aid = destination[item.actionid]
-	local player = Player(cid)
-	if player ~= nil then
-		if aid then
-			if player:getStorageValue(900) >= v.storage then
-				if aid.crystal == true then
-					if player:getItemCount(crystalID) >= 1 then
-						player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-						player:teleportTo(v.pos)
-						player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-						player:removeItem(crystalID, 1)
+	local v = destination[item.actionid]
+	local p = Player(cid)
+	local c = Creature(cid)
+	local crystalID = 18457 -- Teleport crystal id
+	if(p) then
+		if(v) then
+			if(p:getStorageValue(900) >= v.storage) then
+				if(v.crystal == true) then
+					if(p:getItemCount(crystalID) >= 1) then
+						c:teleportTo(v.pos)
+						c:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+						doPlayerRemoveItem(cid, crystalID, 1)
 					else
-						player:teleportTo(lastPosition)
-						player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need a teleport crystal to use this device.")
+						c:teleportTo(lastPosition)
+						p:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need a teleport crystal to use this device.")
 					end
 				else
-					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:teleportTo(aid.pos)
-					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+					c:teleportTo(v.pos)
+					c:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				end
 			else
-				if aid.storage == 2 then
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no idea on how to use this device. Xelvar in Kazordoon might tell you more about it.")	
+				if(v.storage == 2) then
+					p:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no idea on how to use this device. Xelvar in Kazordoon might tell you more about it.")	
 				else
-					player:teleportTo(lastPosition)
-					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry, you haven't got access to use this teleport!")
+					c:teleportTo(lastPosition)
+					p:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry, you haven't got access to use this teleport!")
 				end
 			end
 		end
 	end
-	return true
+return true
 end
